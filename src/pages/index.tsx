@@ -3,13 +3,13 @@ import { GetServerSideProps } from "next";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import Header from "./components/Navbar";
-import AboutUs from "./components/AboutUs";
-import Categories from "./components/Categories";
-import ProductShowcase from "./components/ProductShowCase";
-import OurRoutine from "./components/OurRoutine";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import Header from "../components/Navbar";
+import AboutUs from "../components/AboutUs";
+import Categories from "../components/Categories";
+import ProductShowcase from "../components/ProductShowCase";
+import OurRoutine from "../components/OurRoutine";
+import CTA from "../components/CTA";
+import Footer from "../components/Footer";
 
 type Product = {
   id: number;
