@@ -4,6 +4,7 @@ import { GetServerSideProps } from "next";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { supabase } from "../../lib/supabase";
+import { skincareProducts } from "../../components/data/skincareProducts";
 
 type Product = {
   id: number;
@@ -417,6 +418,26 @@ export const getServerSideProps: GetServerSideProps<
   }
 
   try {
+    const productId = Number(id);
+
+    // Cari dulu di produk skincare lokal
+    const localProduct = skincareProducts.find(
+      (product) => product.id === productId
+    );
+
+    if (localProduct) {
+      return {
+        props: {
+          product: {
+            ...localProduct,
+            discountPercentage: 0,
+            rating: 5,
+          },
+        },
+      };
+    }
+
+    // Kalau bukan produk lokal, cari di DummyJSON
     const response = await fetch(
       `https://dummyjson.com/products/${id}`
     );
