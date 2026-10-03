@@ -174,7 +174,7 @@ export default function OrderSuccessPage() {
           </div>
         </header>
 
-        <section className="px-6 py-16 lg:px-10 lg:py-24">
+        <section className="px-6 py-10 lg:px-10 lg:py-9">
           <div className="mx-auto max-w-5xl">
             {/* SUCCESS */}
             <div className="text-center">

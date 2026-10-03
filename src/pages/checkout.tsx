@@ -220,9 +220,9 @@ export default function CheckoutPage() {
           </div>
         </header>
 
-        <section className="px-6 py-16 lg:px-10 lg:py-24">
+        <section className="px-6 py-10 lg:px-10 lg:py-9">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-14">
+            <div className="mb-10">
               <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-[#6F8F72]">
                 Checkout
               </p>

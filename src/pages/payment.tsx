@@ -315,9 +315,9 @@ export default function PaymentPage() {
           </div>
         </header>
 
-        <section className="px-6 py-16 lg:px-10 lg:py-24">
+        <section className="px-6 py-10 lg:px-10 lg:py-9">
           <div className="mx-auto max-w-5xl">
-            <div className="mb-12 text-center">
+            <div className="mb-10 text-center">
               <p className="text-sm font-medium uppercase tracking-[0.25em] text-[#6F8F72]">
                 Payment
               </p>
